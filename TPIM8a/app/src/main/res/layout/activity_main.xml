@@ -14,7 +14,7 @@
         android:layout_weight="1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nome"
+            android:id="@+id/editNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome"
@@ -27,7 +27,7 @@
         android:layout_weight="1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cpf"
+            android:id="@+id/editCPF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CPF"
@@ -39,10 +39,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="enviar"
         android:text="enviar" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
