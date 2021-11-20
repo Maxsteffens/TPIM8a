@@ -1,10 +1,10 @@
-package br.com.unip.tpim8a;
+package br.com.unip.menupima;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -24,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
         textoResultado.setText("Nome:"+nome+ "\n CPF"+cpf);
 
     }
+
+
 
 }
