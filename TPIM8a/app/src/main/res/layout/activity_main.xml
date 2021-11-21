@@ -17,7 +17,7 @@
             android:id="@+id/editNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome"
+            android:hint="Name"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,23 +52,58 @@
 
             <EditText
                 android:id="@+id/editNumero"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:hint="Number"
+                android:inputType="number"
                 tools:ignore="TouchTargetSizeCheck" />
 
 
             <EditText
                 android:id="@+id/editCEP"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:hint="ZIP"
+                android:inputType="number"
                 tools:ignore="TouchTargetSizeCheck" />
+
+            <Spinner
+                android:id="@+id/spinnerUF"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:entries="@array/Estados" />
+
+
         </LinearLayout>
     </com.google.android.material.textfield.TextInputLayout>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editBairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="District" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button2"

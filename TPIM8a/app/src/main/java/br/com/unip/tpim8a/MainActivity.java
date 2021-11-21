@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
     public void enviar(View view){
         TextInputEditText campoNome = findViewById(R.id.editNome);
         TextInputEditText campoCPF = findViewById(R.id.editCPF);
+        TextInputEditText campoLogradouro = findViewById(R.id.editLogradouro);
         TextView textoResultado = findViewById(R.id.textoResultado);
         String nome = campoNome.getText().toString();
         String cpf = campoCPF.getText().toString();
-        textoResultado.setText("Nome:"+nome+ "\n CPF"+cpf);
+        String logradouro = campoLogradouro.getText().toString();
+        textoResultado.setText("Nome:"+nome+ "\n CPF"+cpf+ "\n Logradouro "+logradouro);
 
     }
 
